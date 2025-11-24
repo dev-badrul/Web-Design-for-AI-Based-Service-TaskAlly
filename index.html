@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TaskAlly - AI-Powered Business Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#20B2AA',
+secondary: '#1E3A8A'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+body {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Navigation -->
+<nav class="w-full bg-white border-b border-gray-100 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+<div class="font-['Pacifico'] text-2xl text-secondary">TaskAlly</div>
+<div class="hidden md:flex items-center space-x-8">
+<a href="#" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+<a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+<a href="#pricing" class="text-gray-700 hover:text-primary transition-colors">Pricing</a>
+<a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+<a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+<button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">Get Started</button>
+</div>
+<button class="md:hidden w-8 h-8 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=Breathtaking%20premium%20business%20technology%20landscape%20with%20sophisticated%20AI%20neural%20networks%20and%20elegant%20data%20visualization%20in%20brilliant%20teal%20and%20navy%20gradients%2C%20luxurious%20corporate%20background%20with%20flowing%20digital%20streams%20and%20interconnected%20nodes%2C%20modern%20futuristic%20aesthetic%20with%20clean%20geometric%20patterns%20and%20professional%20depth%2C%20stunning%20visual%20composition%20with%20premium%20lighting%20and%20atmospheric%20depth%2C%20enterprise-grade%20design%20quality&width=1920&height=1080&seq=hero-premium-bg&orientation=landscape'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-white bg-opacity-70"></div>
+<div class="relative w-full max-w-7xl mx-auto px-6 py-20">
+<div class="max-w-3xl">
+<h1 class="text-5xl md:text-6xl font-bold text-secondary mb-6 leading-tight">AI-Powered Business Support That Works Behind the Scenes</h1>
+<p class="text-xl text-gray-600 mb-8 leading-relaxed">TaskAlly configures and runs a curated stack of AI tools to handle your calls, bookings, messages, and admin tasks automatically. Focus on growing your business while we handle the rest.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white px-8 py-4 !rounded-button text-lg hover:bg-opacity-90 transition-all whitespace-nowrap">Get Started Today</button>
+<button class="border-2 border-primary text-primary px-8 py-4 !rounded-button text-lg hover:bg-primary hover:text-white transition-all whitespace-nowrap">Learn More</button>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-secondary mb-4">How TaskAlly Works</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Simple setup, powerful automation. We configure AI tools tailored to your business needs and manage everything in the background.</p>
+</div>
+<div class="grid md:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="w-24 h-24 rounded-2xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Beautiful%20abstract%20consultation%20icon%20with%20sophisticated%20geometric%20patterns%20in%20teal%20and%20navy%20colors%2C%20professional%20business%20meeting%20visualization%20with%20elegant%20flowing%20lines%20and%20interconnected%20shapes%2C%20modern%20minimal%20design%20representing%20analysis%20and%20planning%2C%20premium%20quality%20illustration%20with%20smooth%20gradients%20and%20clean%20aesthetic&width=200&height=200&seq=consultation-icon&orientation=squarish" alt="Consultation" class="w-full h-full object-cover object-top">
+</div>
+<div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mx-auto mb-4 text-sm font-bold">1</div>
+<h3 class="text-xl font-semibold text-secondary mb-3">Consultation</h3>
+<p class="text-gray-600">We analyze your business needs and identify automation opportunities</p>
+</div>
+<div class="text-center">
+<div class="w-24 h-24 rounded-2xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Stunning%20abstract%20configuration%20visualization%20with%20interconnected%20network%20nodes%20and%20flowing%20data%20streams%20in%20teal%20gradients%2C%20sophisticated%20technical%20setup%20illustration%20with%20elegant%20geometric%20patterns%2C%20modern%20AI%20integration%20concept%20with%20clean%20minimal%20design%2C%20premium%20quality%20artwork%20representing%20system%20configuration%20and%20connectivity&width=200&height=200&seq=configuration-icon&orientation=squarish" alt="Configuration" class="w-full h-full object-cover object-top">
+</div>
+<div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mx-auto mb-4 text-sm font-bold">2</div>
+<h3 class="text-xl font-semibold text-secondary mb-3">Configuration</h3>
+<p class="text-gray-600">Our team sets up and integrates AI tools customized for your workflow</p>
+</div>
+<div class="text-center">
+<div class="w-24 h-24 rounded-2xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Elegant%20automation%20visualization%20with%20smooth%20flowing%20mechanical%20elements%20and%20AI%20neural%20patterns%20in%20navy%20and%20teal%20colors%2C%20sophisticated%20robotic%20process%20illustration%20with%20beautiful%20geometric%20shapes%2C%20modern%20technology%20concept%20with%20premium%20gradients%20and%20clean%20minimal%20aesthetic%2C%20professional%20quality%20artwork%20representing%20automated%20systems&width=200&height=200&seq=automation-icon&orientation=squarish" alt="Automation" class="w-full h-full object-cover object-top">
+</div>
+<div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mx-auto mb-4 text-sm font-bold">3</div>
+<h3 class="text-xl font-semibold text-secondary mb-3">Automation</h3>
+<p class="text-gray-600">AI handles calls, bookings, messages, and admin tasks automatically</p>
+</div>
+<div class="text-center">
+<div class="w-24 h-24 rounded-2xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Beautiful%20growth%20visualization%20with%20ascending%20elements%20and%20flourishing%20patterns%20in%20vibrant%20teal%20and%20navy%20gradients%2C%20sophisticated%20business%20success%20illustration%20with%20elegant%20upward%20flowing%20lines%2C%20modern%20achievement%20concept%20with%20premium%20geometric%20shapes%20and%20clean%20minimal%20design%2C%20inspiring%20artwork%20representing%20business%20growth%20and%20success&width=200&height=200&seq=growth-icon&orientation=squarish" alt="Growth" class="w-full h-full object-cover object-top">
+</div>
+<div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mx-auto mb-4 text-sm font-bold">4</div>
+<h3 class="text-xl font-semibold text-secondary mb-3">Growth</h3>
+<p class="text-gray-600">Focus on your core business while we optimize and maintain your AI stack</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Benefits Section -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-secondary mb-4">Why Choose TaskAlly</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Experience the power of AI automation without the complexity. We handle the technical setup so you can focus on what matters most.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="text-center">
+<div class="w-32 h-32 rounded-3xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Gorgeous%20seamless%20integration%20visualization%20with%20flowing%20interconnected%20systems%20and%20elegant%20data%20streams%20in%20teal%20and%20navy%20colors%2C%20sophisticated%20technology%20connection%20illustration%20with%20beautiful%20geometric%20patterns%2C%20modern%20integration%20concept%20with%20premium%20gradients%20and%20smooth%20flowing%20lines%2C%20high-quality%20artwork%20representing%20perfect%20system%20harmony%20and%20connectivity&width=300&height=300&seq=integration-benefit&orientation=squarish" alt="Seamless Integration" class="w-full h-full object-cover object-top">
+</div>
+<h3 class="text-2xl font-semibold text-secondary mb-4">Seamless Integration</h3>
+<p class="text-gray-600 leading-relaxed">Our AI tools integrate smoothly with your existing systems and workflows. No disruption, just enhanced efficiency from day one.</p>
+</div>
+<div class="text-center">
+<div class="w-32 h-32 rounded-3xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Stunning%20complete%20solution%20visualization%20with%20comprehensive%20puzzle%20pieces%20fitting%20together%20perfectly%20in%20vibrant%20teal%20and%20navy%20gradients%2C%20sophisticated%20all-in-one%20system%20illustration%20with%20elegant%20geometric%20harmony%2C%20modern%20holistic%20approach%20concept%20with%20premium%20design%20elements%2C%20beautiful%20artwork%20representing%20total%20business%20solution%20and%20completeness&width=300&height=300&seq=complete-solution&orientation=squarish" alt="Complete Solution" class="w-full h-full object-cover object-top">
+</div>
+<h3 class="text-2xl font-semibold text-secondary mb-4">Complete Solution</h3>
+<p class="text-gray-600 leading-relaxed">From phone calls to appointment scheduling, message handling to basic admin tasks - we provide comprehensive AI-powered support.</p>
+</div>
+<div class="text-center">
+<div class="w-32 h-32 rounded-3xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Breathtaking%20scalable%20growth%20visualization%20with%20dynamic%20upward%20movement%20and%20flourishing%20patterns%20in%20brilliant%20teal%20and%20navy%20colors%2C%20sophisticated%20business%20expansion%20illustration%20with%20elegant%20ascending%20geometric%20shapes%2C%20modern%20success%20trajectory%20concept%20with%20premium%20flowing%20gradients%2C%20inspiring%20high-quality%20artwork%20representing%20unlimited%20growth%20potential&width=300&height=300&seq=scalable-growth&orientation=squarish" alt="Scalable Growth" class="w-full h-full object-cover object-top">
+</div>
+<h3 class="text-2xl font-semibold text-secondary mb-4">Scalable Growth</h3>
+<p class="text-gray-600 leading-relaxed">As your business grows, our AI solutions scale with you. More customers, more tasks, same level of automated excellence.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Comparison -->
+<section class="py-20 bg-gray-50">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-secondary mb-4">Before vs After TaskAlly</h2>
+<p class="text-xl text-gray-600">See how TaskAlly transforms your business operations</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<div class="bg-white rounded-2xl p-8 shadow-sm">
+<div class="text-center mb-6">
+<div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-close-line text-red-500 text-xl"></i>
+</div>
+<h3 class="text-2xl font-semibold text-gray-800">Without TaskAlly</h3>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<i class="ri-close-circle-line text-red-500 mt-1"></i>
+<span class="text-gray-600">Missed calls and lost opportunities</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="ri-close-circle-line text-red-500 mt-1"></i>
+<span class="text-gray-600">Manual booking and scheduling conflicts</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="ri-close-circle-line text-red-500 mt-1"></i>
+<span class="text-gray-600">Delayed responses to customer inquiries</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="ri-close-circle-line text-red-500 mt-1"></i>
+<span class="text-gray-600">Time-consuming administrative tasks</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="ri-close-circle-line text-red-500 mt-1"></i>
+<span class="text-gray-600">Inconsistent customer experience</span>
+</li>
+</ul>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-sm border-2 border-primary">
+<div class="text-center mb-6">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-check-line text-primary text-xl"></i>
+</div>
+<h3 class="text-2xl font-semibold text-secondary">With TaskAlly</h3>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<i class="ri-check-circle-line text-primary mt-1"></i>
+<span class="text-gray-600">24/7 AI-powered call handling</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="ri-check-circle-line text-primary mt-1"></i>
+<span class="text-gray-600">Automated booking and scheduling</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="ri-check-circle-line text-primary mt-1"></i>
+<span class="text-gray-600">Instant responses to all inquiries</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="ri-check-circle-line text-primary mt-1"></i>
+<span class="text-gray-600">Streamlined admin task automation</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="ri-check-circle-line text-primary mt-1"></i>
+<span class="text-gray-600">Consistent, professional interactions</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-secondary mb-4">What Our Clients Say</h2>
+<p class="text-xl text-gray-600">Real results from businesses that trust TaskAlly</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-gray-50 rounded-2xl p-8">
+<div class="flex items-center mb-6">
+<div class="w-16 h-16 rounded-2xl overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=Elegant%20wellness%20and%20health%20themed%20abstract%20illustration%20with%20calming%20spa%20elements%20and%20serene%20geometric%20patterns%20in%20soft%20teal%20colors%2C%20sophisticated%20wellness%20studio%20aesthetic%20with%20flowing%20organic%20shapes%2C%20modern%20health%20business%20concept%20with%20premium%20gradients%20and%20peaceful%20harmony%2C%20beautiful%20artwork%20representing%20wellness%20and%20rejuvenation%20industry&width=150&height=150&seq=wellness-client&orientation=squarish" alt="Wellness Studio" class="w-full h-full object-cover object-top">
+</div>
+<div>
+<h4 class="font-semibold text-secondary">Sarah Mitchell</h4>
+<p class="text-sm text-gray-600">Wellness Studio Owner</p>
+</div>
+</div>
+<p class="text-gray-600 leading-relaxed">"TaskAlly transformed our booking process completely. We went from missing 30% of calls to capturing every single inquiry. Our revenue increased by 40% in just three months."</p>
+</div>
+<div class="bg-gray-50 rounded-2xl p-8">
+<div class="flex items-center mb-6">
+<div class="w-16 h-16 rounded-2xl overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=Professional%20consulting%20business%20visualization%20with%20sophisticated%20strategy%20elements%20and%20elegant%20corporate%20patterns%20in%20navy%20and%20teal%20colors%2C%20modern%20business%20consulting%20aesthetic%20with%20clean%20geometric%20shapes%2C%20premium%20executive%20concept%20with%20flowing%20lines%20and%20professional%20harmony%2C%20high-quality%20artwork%20representing%20consulting%20and%20business%20strategy%20services&width=150&height=150&seq=consulting-client&orientation=squarish" alt="Consulting Firm" class="w-full h-full object-cover object-top">
+</div>
+<div>
+<h4 class="font-semibold text-secondary">Marcus Rodriguez</h4>
+<p class="text-sm text-gray-600">Consulting Firm CEO</p>
+</div>
+</div>
+<p class="text-gray-600 leading-relaxed">"The AI handles our initial client consultations flawlessly. It qualifies leads, schedules meetings, and even sends follow-ups. It's like having a perfect assistant that never sleeps."</p>
+</div>
+<div class="bg-gray-50 rounded-2xl p-8">
+<div class="flex items-center mb-6">
+<div class="w-16 h-16 rounded-2xl overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=Beautiful%20local%20service%20business%20illustration%20with%20community-focused%20elements%20and%20friendly%20geometric%20patterns%20in%20warm%20teal%20gradients%2C%20sophisticated%20neighborhood%20service%20aesthetic%20with%20inviting%20organic%20shapes%2C%20modern%20local%20business%20concept%20with%20premium%20design%20and%20approachable%20harmony%2C%20quality%20artwork%20representing%20local%20community%20services%20and%20customer%20care&width=150&height=150&seq=service-client&orientation=squarish" alt="Local Service Business" class="w-full h-full object-cover object-top">
+</div>
+<div>
+<h4 class="font-semibold text-secondary">Jennifer Chen</h4>
+<p class="text-sm text-gray-600">Local Service Business</p>
+</div>
+</div>
+<p class="text-gray-600 leading-relaxed">"Customer satisfaction scores improved dramatically since implementing TaskAlly. Clients love the instant responses and seamless booking experience. It's been a game-changer."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Effortless AI Integration Section -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-secondary mb-4">Effortless AI Integration</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">We seamlessly integrate AI solutions into your workflow and manage everything automatically</p>
+</div>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="text-center">
+<div class="w-32 h-32 rounded-3xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Stunning%20consultation%20visualization%20with%20elegant%20meeting%20elements%20and%20sophisticated%20discussion%20patterns%20in%20vibrant%20teal%20and%20navy%20gradients%2C%20modern%20business%20consultation%20aesthetic%20with%20flowing%20geometric%20shapes%2C%20premium%20professional%20meeting%20concept%20with%20clean%20lines%20and%20harmonious%20design%2C%20beautiful%20artwork%20representing%20expert%20consultation%20and%20strategic%20planning&width=300&height=300&seq=consultation-setup&orientation=squarish" alt="Consultation" class="w-full h-full object-cover object-top">
+</div>
+<h3 class="text-2xl font-semibold text-secondary mb-4">Consultation</h3>
+<p class="text-gray-600 leading-relaxed">We understand your business needs and requirements through comprehensive analysis and expert evaluation</p>
+</div>
+<div class="text-center">
+<div class="w-32 h-32 rounded-3xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Gorgeous%20technical%20setup%20visualization%20with%20sophisticated%20system%20configuration%20elements%20and%20elegant%20installation%20patterns%20in%20brilliant%20teal%20and%20navy%20colors%2C%20modern%20technology%20setup%20aesthetic%20with%20flowing%20connection%20lines%2C%20premium%20automation%20concept%20with%20geometric%20harmony%20and%20professional%20design%2C%20high-quality%20artwork%20representing%20seamless%20system%20setup&width=300&height=300&seq=system-setup&orientation=squarish" alt="Setup" class="w-full h-full object-cover object-top">
+</div>
+<h3 class="text-2xl font-semibold text-secondary mb-4">Setup</h3>
+<p class="text-gray-600 leading-relaxed">We configure your AI-powered tools to work seamlessly with your existing systems and workflows</p>
+</div>
+<div class="text-center">
+<div class="w-32 h-32 rounded-3xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Breathtaking%20operation%20visualization%20with%20dynamic%20running%20systems%20and%20flowing%20operational%20elements%20in%20vivid%20teal%20and%20navy%20gradients%2C%20sophisticated%20business%20operation%20aesthetic%20with%20elegant%20automated%20patterns%2C%20modern%20operational%20excellence%20concept%20with%20premium%20flowing%20design%2C%20inspiring%20artwork%20representing%20smooth%20business%20operations%20and%20continuous%20performance&width=300&height=300&seq=operation-flow&orientation=squarish" alt="Operation" class="w-full h-full object-cover object-top">
+</div>
+<h3 class="text-2xl font-semibold text-secondary mb-4">Operation</h3>
+<p class="text-gray-600 leading-relaxed">We manage everything behind the scenes while you focus on your business growth and success</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Complete Business Automation Section -->
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-secondary mb-4">Complete Business Automation</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Automate every aspect of your business operations while you focus on strategic growth</p>
+</div>
+<div class="grid md:grid-cols-4 gap-8">
+<div class="bg-white rounded-2xl p-8 text-center shadow-sm">
+<div class="w-20 h-20 rounded-2xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Elegant%20phone%20call%20handling%20visualization%20with%20sophisticated%20communication%20elements%20and%20flowing%20conversation%20patterns%20in%20teal%20and%20navy%20colors%2C%20modern%20telecommunication%20aesthetic%20with%20clean%20geometric%20shapes%2C%20premium%20call%20management%20concept%20with%20professional%20design%20harmony%2C%20beautiful%20artwork%20representing%20perfect%20call%20handling%20and%20customer%20communication&width=200&height=200&seq=call-handling&orientation=squarish" alt="Call Handling" class="w-full h-full object-cover object-top">
+</div>
+<h3 class="text-xl font-semibold text-secondary mb-3">Never Miss a Call</h3>
+<p class="text-gray-600 text-sm leading-relaxed">AI-powered call answering and routing ensures every customer inquiry is addressed promptly</p>
+</div>
+<div class="bg-white rounded-2xl p-8 text-center shadow-sm">
+<div class="w-20 h-20 rounded-2xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Stunning%20booking%20automation%20visualization%20with%20elegant%20scheduling%20elements%20and%20sophisticated%20calendar%20patterns%20in%20vibrant%20teal%20and%20navy%20gradients%2C%20modern%20appointment%20management%20aesthetic%20with%20flowing%20time%20organization%2C%20premium%20booking%20system%20concept%20with%20clean%20design%20harmony%2C%20high-quality%20artwork%20representing%20effortless%20booking%20and%20scheduling%20automation&width=200&height=200&seq=booking-auto&orientation=squarish" alt="Booking" class="w-full h-full object-cover object-top">
+</div>
+<h3 class="text-xl font-semibold text-secondary mb-3">Effortless Booking</h3>
+<p class="text-gray-600 text-sm leading-relaxed">Automated scheduling and reminders keep your calendar organized without manual effort</p>
+</div>
+<div class="bg-white rounded-2xl p-8 text-center shadow-sm">
+<div class="w-20 h-20 rounded-2xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Beautiful%20unified%20messaging%20visualization%20with%20sophisticated%20communication%20hub%20elements%20and%20elegant%20message%20flow%20patterns%20in%20brilliant%20teal%20and%20navy%20colors%2C%20modern%20message%20management%20aesthetic%20with%20connected%20conversation%20streams%2C%20premium%20communication%20concept%20with%20harmonious%20design%2C%20quality%20artwork%20representing%20seamless%20message%20organization%20and%20unified%20communications&width=200&height=200&seq=unified-messaging&orientation=squarish" alt="Messaging" class="w-full h-full object-cover object-top">
+</div>
+<h3 class="text-xl font-semibold text-secondary mb-3">Unified Messaging</h3>
+<p class="text-gray-600 text-sm leading-relaxed">All your communications in one place, with intelligent categorization and responses</p>
+</div>
+<div class="bg-white rounded-2xl p-8 text-center shadow-sm">
+<div class="w-20 h-20 rounded-2xl mx-auto mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Gorgeous%20administrative%20automation%20visualization%20with%20sophisticated%20task%20management%20elements%20and%20elegant%20workflow%20patterns%20in%20vivid%20teal%20and%20navy%20gradients%2C%20modern%20admin%20efficiency%20aesthetic%20with%20flowing%20organizational%20shapes%2C%20premium%20task%20automation%20concept%20with%20professional%20design%20harmony%2C%20inspiring%20artwork%20representing%20streamlined%20administrative%20processes&width=200&height=200&seq=admin-tasks&orientation=squarish" alt="Admin Tasks" class="w-full h-full object-cover object-top">
+</div>
+<h3 class="text-xl font-semibold text-secondary mb-3">Admin Tasks Handled</h3>
+<p class="text-gray-600 text-sm leading-relaxed">From invoicing to data entry, repetitive tasks are completed without your involvement</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trusted by Industry Leaders Section -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-secondary mb-4">Trusted by Industry Leaders</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover how industry leaders have revolutionized their operations with our cutting-edge AI solutions</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-gray-50 rounded-2xl p-8">
+<div class="w-20 h-20 rounded-2xl mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Elegant%20salon%20and%20beauty%20business%20visualization%20with%20sophisticated%20styling%20elements%20and%20luxurious%20aesthetic%20patterns%20in%20soft%20teal%20and%20gold%20colors%2C%20modern%20beauty%20salon%20concept%20with%20flowing%20organic%20shapes%2C%20premium%20beauty%20industry%20design%20with%20harmonious%20gradients%2C%20beautiful%20artwork%20representing%20professional%20salon%20services%20and%20beauty%20treatments&width=200&height=200&seq=salon-business&orientation=squarish" alt="Beauty Salon" class="w-full h-full object-cover object-top">
+</div>
+<p class="text-gray-600 leading-relaxed mb-6 italic">"TaskAlly transformed how we handle customer inquiries. We're now able to focus on new services while our communications are professionally managed."</p>
+<div class="border-t border-gray-200 pt-4">
+<h4 class="font-semibold text-secondary">Sarah Johnson</h4>
+<p class="text-sm text-gray-500">Owner, Bloom Boutique</p>
+</div>
+</div>
+<div class="bg-gray-50 rounded-2xl p-8">
+<div class="w-20 h-20 rounded-2xl mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Professional%20healthcare%20practice%20visualization%20with%20sophisticated%20medical%20elements%20and%20clean%20clinical%20patterns%20in%20calming%20teal%20and%20white%20colors%2C%20modern%20healthcare%20aesthetic%20with%20flowing%20wellness%20shapes%2C%20premium%20medical%20practice%20concept%20with%20trustworthy%20design%20harmony%2C%20quality%20artwork%20representing%20professional%20healthcare%20services%20and%20patient%20care&width=200&height=200&seq=healthcare-practice&orientation=squarish" alt="Healthcare Practice" class="w-full h-full object-cover object-top">
+</div>
+<p class="text-gray-600 leading-relaxed mb-6 italic">"The automated booking system has been a game-changer. Our clients love the instant confirmations, and we love not having to manage calendars manually."</p>
+<div class="border-t border-gray-200 pt-4">
+<h4 class="font-semibold text-secondary">Michael Chen</h4>
+<p class="text-sm text-gray-500">Founder, Care First Center</p>
+</div>
+</div>
+<div class="bg-gray-50 rounded-2xl p-8">
+<div class="w-20 h-20 rounded-2xl mb-6 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Stunning%20creative%20agency%20visualization%20with%20innovative%20design%20elements%20and%20artistic%20patterns%20in%20vibrant%20teal%20and%20navy%20gradients%2C%20modern%20creative%20studio%20aesthetic%20with%20flowing%20inspirational%20shapes%2C%20premium%20creative%20industry%20concept%20with%20dynamic%20design%20harmony%2C%20inspiring%20artwork%20representing%20creative%20services%20and%20innovative%20marketing%20solutions&width=200&height=200&seq=creative-agency&orientation=squarish" alt="Creative Agency" class="w-full h-full object-cover object-top">
+</div>
+<p class="text-gray-600 leading-relaxed mb-6 italic">"As a small business owner, I was drowning in admin tasks. TaskAlly gave me back 20+ hours per week to focus on growing my business."</p>
+<div class="border-t border-gray-200 pt-4">
+<h4 class="font-semibold text-secondary">Emma Rodriguez</h4>
+<p class="text-sm text-gray-500">CEO, Creative Marketing Co.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="relative py-20 overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=Abstract%20wave%20patterns%20and%20flowing%20gradients%20in%20teal%20and%20navy%20colors%2C%20minimal%20geometric%20shapes%20suggesting%20connectivity%20and%20growth%2C%20modern%20business%20technology%20background%2C%20clean%20professional%20design%20with%20subtle%20texture%2C%20no%20people%20or%20objects%2C%20flowing%20lines%20and%20interconnected%20elements%20for%20AI%20automation&width=1920&height=600&seq=cta-bg-002&orientation=landscape'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-secondary bg-opacity-90"></div>
+<div class="relative max-w-4xl mx-auto px-6 text-center">
+<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Transform Your Business?</h2>
+<p class="text-xl text-gray-200 mb-8 leading-relaxed">Join hundreds of businesses that have automated their operations with TaskAlly. Start your free consultation today and discover how AI can work for you.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-white text-secondary px-8 py-4 !rounded-button text-lg font-semibold hover:bg-gray-100 transition-all whitespace-nowrap">Start Free Consultation</button>
+<button class="border-2 border-white text-white px-8 py-4 !rounded-button text-lg hover:bg-white hover:text-secondary transition-all whitespace-nowrap">View Pricing Plans</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<div class="font-['Pacifico'] text-2xl text-primary mb-4">TaskAlly</div>
+<p class="text-gray-400 leading-relaxed">AI-powered business support that works behind the scenes to help your business grow.</p>
+</div>
+<div>
+<h4 class="font-semibold text-lg mb-4">Services</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#" class="hover:text-primary transition-colors">Call Handling</a></li>
+<li><a href="#" class="hover:text-primary transition-colors">Appointment Booking</a></li>
+<li><a href="#" class="hover:text-primary transition-colors">Message Management</a></li>
+<li><a href="#" class="hover:text-primary transition-colors">Admin Automation</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-lg mb-4">Company</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#" class="hover:text-primary transition-colors">About Us</a></li>
+<li><a href="#" class="hover:text-primary transition-colors">Pricing</a></li>
+<li><a href="#" class="hover:text-primary transition-colors">Case Studies</a></li>
+<li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-lg mb-4">Connect</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-twitter-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+<p>&copy; 2025 TaskAlly. All rights reserved. | Privacy Policy | Terms of Service</p>
+</div>
+</div>
+</footer>
+<script id="navigation-mobile">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.querySelector('nav button');
+const mobileMenu = document.createElement('div');
+mobileMenu.className = 'md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-4 hidden';
+mobileMenu.innerHTML = `
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors">Home</a>
+<a href="#services" class="block text-gray-700 hover:text-primary transition-colors">Services</a>
+<a href="#pricing" class="block text-gray-700 hover:text-primary transition-colors">Pricing</a>
+<a href="#about" class="block text-gray-700 hover:text-primary transition-colors">About</a>
+<a href="#contact" class="block text-gray-700 hover:text-primary transition-colors">Contact</a>
+<button class="w-full bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all">Get Started</button>
+`;
+mobileMenuButton.parentElement.parentElement.appendChild(mobileMenu);
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+});
+</script>
+<script id="smooth-scrolling">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+if (targetElement) {
+targetElement.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+});
+</script>
+<script id="button-interactions">
+document.addEventListener('DOMContentLoaded', function() {
+const buttons = document.querySelectorAll('button');
+buttons.forEach(button => {
+button.addEventListener('mouseenter', function() {
+this.style.transform = 'translateY(-1px)';
+});
+button.addEventListener('mouseleave', function() {
+this.style.transform = 'translateY(0)';
+});
+});
+});
+</script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    
+</script>
+</body>
+</html>
